@@ -1,0 +1,12 @@
+#!/bin/tcsh -f
+
+#PBS -V
+#PBS -l nodes=1:ppn=24
+#PBS -S /bin/tcsh
+#PBS -l walltime=99:23:00:00
+#PBS -N INFLAAAAAAAATION
+#PBS -l mem=4gb
+#PBS -j oe
+
+cd /home/roberts/sne/FeatureRobustness
+python Inflate_errorbars.py
